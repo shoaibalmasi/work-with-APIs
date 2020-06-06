@@ -1,0 +1,137 @@
+/* *{
+    box-sizing:content-box;
+} */
+.header{
+width: 100%;
+height: 100px;
+background-color: rgb(71, 71, 71);
+color: rgb(247, 211, 10);
+text-align: center;
+padding: 10px;
+}
+select{
+    width: 450px;
+    height: 30px;
+    border: 2px solid rgb(18, 19, 18);
+    border-radius: 10px;
+}
+.mycontainer{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(204, 202, 195);
+    display: grid;
+    grid-template: 50% 50%/33% 33% 33%;
+    padding: 20px;
+    /* padding-right: 10px; */
+    grid-gap:10px;
+
+}
+#info{
+    grid-column:1/2;
+    grid-row:1/2;
+    background-color: rgb(71, 71, 68);
+    padding: 0;
+}
+.info-child{
+    /* padding: 10px; */
+    display: none;
+    padding-left: 10px;
+    
+}
+#call{
+    grid-column:2/3;
+    grid-row:1/2;
+    background-color: rgb(255, 223, 45);
+    padding: 0px;
+    text-align: center;
+}
+#flag{
+    grid-column:3/4;
+    grid-row:1/2;
+    background-color: rgb(85, 79, 80);
+    padding: 10px;
+    overflow: hidden;
+}
+#contryFlag{
+    display: none;
+}
+#weather{
+    grid-column:1/2;
+    grid-row:2/3;
+    background-color: rgb(184, 150, 155);
+    padding:0;
+}
+#location{
+    grid-column:2/4;
+    grid-row:2/3;
+    background-color: rgb(39, 164, 214);
+    padding: 20px;
+}
+.title,.result{
+    color: rgb(247, 211, 10);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 11px;
+    margin-bottom: 0;
+
+}
+.result{
+    color: white;
+}
+.call-child{
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 17px;
+    font-weight: bold;
+    display: none;
+}
+#callCode{
+    margin-top: 30px;
+    font-size: 70px;
+}
+img{
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+}
+.weather-icon{
+    width: 165px;
+    height: 130px;
+    margin-bottom: 0;
+    align-self: center;
+}
+#weather-child{
+    display: flex;
+    visibility: hidden;
+    flex-direction:row;
+    justify-content: space-around;
+    padding: 10px;
+   
+}
+#weather-des{
+    color: yellow;
+    /* font-size: 30px; */
+    margin-top:0px;
+}
+.wether-icon-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+   padding: 0;
+}
+p{
+    font-weight: bold;
+}
+.weather-txt{
+    padding-top: 20px;
+    padding-left: 0px;
+}
+span{
+    color: white;
+}

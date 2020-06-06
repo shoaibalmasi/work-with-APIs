@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>LEARN HOW TO WORK WITH APIs</h2>
+        <select name="" id="country">
+            <option id="empty">choose a country</option>
+
+        </select>
+    </div>
+    <div class="mycontainer">
+        <div id="info">
+                <div class="call-child" id="contry-name"></div>
+                <div class="info-child">
+                        <p class="title">Native Name: <span class="result" id="nativeName"></span></p>
+                        <p class="title">Capital: <span class="result" id="capital"></span></p>
+                        <p class="title">Region: <span class="result" id="region"></span></p>
+                        <p class="title">Population: <span class="result" id="population"></span></p>
+                        <p class="title">Language: <span class="result" id="language"></span></p>
+                        <p class="title">Time Zone: <span class="result" id="timezone"></span></p>
+                </div>
+               
+        </div>
+        <div id="call">
+            <div class="call-child">
+                CALLING CODE
+            </div>
+            <p id="callCode"></p>
+        </div>
+        <div id="flag">
+            <img src="" id="contryFlag">
+        </div>
+        <div id="weather">
+            <div class="call-child">
+            CAPITAL WEATHER REPORT
+            </div>
+            <div id='weather-child'>
+                <div class="weather-txt col-6"> 
+                        <p>Wind speed: <span id="wind-speed"></span> MS</p>
+                        <p>Temperature: <span id="temperature"></span>F</p>
+                        <p>Humidity: <span id="humidity"></span> %</p>
+                        <p>Visibility: <span id="visibility"></span> m</p>
+                </div>
+                <div class='wether-icon-parent col-6'>
+                        <img class="weather-icon" src=''>
+                        <p id="weather-des"></p>
+                </div>
+               
+            </div>
+        </div>
+        <div id="location">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
+    </script>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbT3kpp-qpa6KAgxhax4r-jd9juCQaG_k&callback=initMap"
+    async defer></script>
+</body>
+
+</html>
